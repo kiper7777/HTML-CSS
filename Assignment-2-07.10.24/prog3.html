@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+
+<style>
+    .box {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        animation-name: squareAnimate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+
+    @keyframes squareAnimate {
+        /* from {
+            background-color: red
+        }
+
+        to {
+            background-color: blue
+        } */
+
+        0% {
+            background-color: red;
+        }
+
+        25% {
+            background-color: rgb(149, 227, 16);
+        }
+
+        50% {
+            background-color: rgb(145, 230, 9);
+        }
+
+        75% {
+            background-color: rgb(232, 12, 199);
+        }
+
+        100% {
+            background-color: rgb(201, 227, 9);
+        }
+
+
+
+
+    }
+</style>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

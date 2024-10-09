@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice CSS Animation2</title>
+
+    <style>
+        .circle {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            animation-duration: 4s;
+            animation-name: circleAnimate;
+            border-radius: 50%;
+        }
+
+        @keyframes circleAnimate {
+
+            0% {
+                background-color: red;
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: blue;
+                top: 0;
+                left: 400px;
+                /* border-radius: 80%; */
+            }
+
+            50% {
+                background-color: orange;
+                top: 200px;
+                left: 400px;
+            }
+
+            75% {
+                background-color: brown;
+                top: 200px;
+                left: 0;
+            }
+
+            100% {
+                background-color: rgb(201, 227, 9);
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>

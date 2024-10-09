@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested flex</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+
+            /* margin: 20px; */
+            border: 1px solid black;
+            width: 700px;
+            height: 100px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-evenly;
+            width: 360px;
+        }
+
+        img {
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        .aside {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 200px;
+            height: 500px;
+            /* margin-left: 20px; */
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid black;
+            justify-content: space-evenly;
+            width: 610px;
+        }
+
+        .block {
+            display: flex;
+            flex-direction: row;
+            width: 700px
+        }
+
+        .main_item {
+            border: 1px solid black;
+            width: 140px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="logo.jpeg" alt="Logo" />
+        <h1>Company</h1>
+        <nav class="nav">
+            <ul class="menu">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Gallery</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="block">
+        <aside class="aside">
+            <div class="aside_block">
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <div class="main_item"></div>
+            <div class="main_item"></div>
+            <div class="main_item"></div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice CSS Animation</title>
+
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            animation-name: squareAnimate1;
+            animation-duration: 2s;
+
+
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes squareAnimate1 {
+            from {
+                background-color: red
+            }
+
+            to {
+                background-color: blue
+            }
+        }
+
+        .circle {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            animation-name: circleAnimate;
+            border-radius: 50%;
+        }
+
+        @keyframes circleAnimate {
+
+            from {
+                background-color: red
+            }
+
+            to {
+                background-color: blue
+            }
+
+            to {
+                background-color: orange;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <div class="circle"></div>
+
+</body>
+
+</html>
