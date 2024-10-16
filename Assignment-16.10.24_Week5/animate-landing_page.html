@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        .box_jump {
+            border: 4px solid gray;
+            width: 210px;
+            height: 410px;
+            margin: 20px;
+            background-color: rgb(246, 246, 127);
+            animation: jump 1s infinite;
+            animation-direction: alternate-reverse;
+            box-shadow: 20px 20px 20px rgb(76, 76, 236);
+        }
+
+        @keyframes jump {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(100px);
+            }
+        }
+
+        div img {
+            width: 200px;
+            height: 340px;
+            padding: 4px;
+        }
+
+        .box_title {
+            color: gray;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_jump">
+        <img src="/landing.jpg" alt="landing" class="jump" />
+        <h1 class="box_title">Welcome</h1>
+    </div>
+
+</body>
+
+</html>
