@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            margin: 6px;
+
+        }
+
+        header li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            width: 100vw;
+            height: 10vh;
+            background-color: aqua;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        .mainMenu {
+            width: 30vw;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+        }
+
+        .subMenu {
+            display: none;
+            position: absolute;
+        }
+
+        .mainMenu li a:hover+.subMenu {
+            display: block;
+            box-shadow: 0 10px 8px gray;
+            padding: 20px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="/horse.jpg" alt="Logo" />
+        </div>
+
+        <div class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#"></a>About Us</li>
+            <li><a href="#">Course</a>
+                <ul class="subMenu">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                </ul>
+            </li>
+            <li href="#">Contact Us</li>
+        </div>
+    </header>
+
+</body>
+
+</html>
