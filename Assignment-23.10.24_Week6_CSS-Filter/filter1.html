@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content img {
+            width: 60vw;
+        }
+
+        .content .image {
+            width: 60vw;
+            /* filter: blur(2px); */
+            /* filter: brightness(180%); */
+            /* filter: grayscale(80%); */
+            /* filter: contrast(200%); */
+            /* filter: opacity(60%); */
+            /* filter: saturate(190%); */
+            /* filter: sepia(100%); */
+            /* filter: hue-rotate(1200deg); */
+            /* filter: drop-shadow(8px 8px 12px rgb(188, 61, 82)); */
+            filter: invert(100%);
+            /* filter: blur(2px) brightness(100%) drop-shadow(8px 8px 12px rgb(132, 15, 34)); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>Original image</h1>
+        <img src="nature.jpg" alt="">
+        <h1>Filtered image</h1>
+        <img class="image" src="nature.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

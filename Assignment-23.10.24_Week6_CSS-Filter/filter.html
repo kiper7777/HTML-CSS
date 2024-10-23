@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        nav {
+            width: 100vw;
+            height: 10vh;
+            background-color: rgb(187, 14, 138);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            width: 80vw;
+            display: grid;
+            margin: 50px auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            grid-auto-rows: 100px;
+        }
+
+        .content div {
+            background-color: azure;
+            border: 2px solid black;
+        }
+
+        div img {
+            height: 100%;
+            width: 100%;
+            filter: blur(2px);
+        }
+
+        .item1 {
+            grid-row: 1/2;
+        }
+
+        .item2 {
+            grid-row: 1/4;
+        }
+
+        .item3 {
+            grid-row: 1/4;
+        }
+
+        .item4 {
+            grid-row: 2/4;
+        }
+
+        .item5 {
+            grid-row: 2/4;
+            grid-column: 3/4;
+            overflow: hidden;
+        }
+
+        .item6 {
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/">Contact</a>
+        <a href="/">Gallery</a>
+        <a href="/">About us</a>
+    </nav>
+
+    <div class="content">
+        <div class="item item1">
+            <img src="landing.jpg" alt="" />
+        </div>
+
+        <div class="item item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aut quod laborum fugit
+            rem amet ipsum. Accusamus dicta iste, numquam, facilis voluptas modi similique laudantium qui minus, est
+            alias repellendus!</div>
+
+        <div class="item item3">
+            <img src="landing.jpg" alt="" srcset="" />
+        </div>
+
+        <div class="item item4">
+            <img src="landing.jpg" alt="" />
+        </div>
+
+        <div class="item item5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt deserunt ipsam
+            pariatur dolore eaque officiis delectus nesciunt nemo recusandae, consequatur nisi quas voluptatum quaerat
+            odit, veritatis amet reprehenderit perferendis.</div>
+        <div class="item item6">
+            <img src="landing.jpg" alt="" />
+        </div>
+
+    </div>
+</body>
+
+</html>
