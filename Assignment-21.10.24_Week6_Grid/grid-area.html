@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            background-color: bisque;
+        }
+
+        .container {
+            background-color: azure;
+            height: 70vh;
+            width: 80vw;
+            border: 1px solid black;
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: 20% 40% 40%; */
+
+
+
+            /* grid-template-rows: repeat(3, minmax(100px auto)); */
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            grid-template-areas:
+
+                "header header header"
+                "nav nav nav";
+
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: nav;
+        }
+
+
+
+
+
+
+        .container .item {
+            background-color: aqua;
+        }
+
+        .container .item:nth-child(even) {
+            background-color: rgb(82, 80, 79);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+
+
+</body>
+
+</html>
