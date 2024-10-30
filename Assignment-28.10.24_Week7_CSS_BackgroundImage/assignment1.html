@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1 {
+            width: 100vw;
+            height: 8vh;
+            background-color: rgb(174, 171, 171);
+            color: white;
+            text-shadow: 6px 4px 2px gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            width: 100vw;
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            width: 100vw;
+            height: 4vh;
+            background-color: rgb(117, 117, 117);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            width: 80vw;
+            display: flex;
+            margin: 50px auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            justify-content: center;
+        }
+
+        div img {
+            width: 500px;
+            height: 270px;
+            box-shadow: 18px 10px 18px rgb(202, 196, 196);
+            border-radius: 6px;
+        }
+
+        div content {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JOHN SCHMIDT</h1>
+
+    <nav>
+        <a href="/">SHOWS</a>
+        <a href="/">ABOUT</a>
+        <a href="/">CONTACT</a>
+    </nav>
+
+    <h2>World-Renowned Painter John Schmidt</h2>
+
+    <div class="content">
+        <img src="nature.jpg" alt="" />
+        <img src="nature.jpg" alt="" />
+    </div>
+
+</body>
+
+</html>

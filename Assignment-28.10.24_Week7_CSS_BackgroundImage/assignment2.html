@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(196, 241, 192);
+            width: 100vw;
+        }
+
+        .content header,
+        nav,
+        main,
+        footer {
+            font-size: 22px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 26px;
+            height: 60px;
+            background-color: gray;
+            color: white;
+            width: 100vw;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(161, 59, 122);
+            height: 30px;
+            color: white;
+        }
+
+        main {
+            background-color: rgb(192, 246, 192);
+            height: 600px;
+        }
+
+        footer {
+            background-color: gray;
+            height: 60px;
+        }
+
+        @media screen and (max-width:700px) {
+            nav {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            nav {
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <header>
+            <h1> header</h1>
+            <nav>nav</nav>
+        </header>
+
+        <main>
+            main
+        </main>
+
+        <footer>
+            footer
+        </footer>
+    </div>
+
+</body>
+
+</html>
