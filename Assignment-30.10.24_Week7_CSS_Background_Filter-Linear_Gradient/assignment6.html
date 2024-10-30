@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg {
+            border: 2px solid black
+        }
+
+        text {
+            font-size: 70px;
+            font-family: impact;
+            background: url("/svg.svg");
+        }
+    </style>
+</head>
+
+<body>
+    <svg height="600" width="600">
+
+        <line x1="50" y1="50" x2="280" y2="50" stroke="blue">
+        </line>
+
+        <line x1="280" y1="100" x2="280" y2="50" stroke="blue">
+        </line>
+
+        <line x1="50" y1="50" x2="50" y2="200" stroke="green">
+        </line>
+
+        <rect x="200" y="200" height="200" width="200" stroke="black" fill="yellow">
+        </rect>
+
+        <svg height="300px" width="300px">
+            <rect height="100" width="300"
+                style="fill:purple; stroke: green; stroke-width: 10px; fill-opacity: 0.4; stroke-opacity: 0.9;"></rect>
+        </svg>
+
+        <circle cx="100" cy="100" r="50" fill="red" stroke="black"></circle>
+
+        <text x="50" y="100" fill="green" text-anchor="start">SVG<tspan dy="40px">text</tspan></text>
+    </svg>
+</body>
+
+</html>

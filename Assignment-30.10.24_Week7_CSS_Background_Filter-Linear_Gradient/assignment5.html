@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button1 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 12px;
+            font-size: 20px;
+            background: linear-gradient(to bottom, greenyellow, yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .button1:hover {
+            background: linear-gradient(to bottom, yellow, greenyellow);
+            font-size: 22px;
+
+            color: rgb(64, 237, 64);
+            font-size: 36px;
+            font-family: Impact;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgb(241, 90, 90), 6px 4px 5px blue;
+
+            /* color: transparent;
+            font-size: 38px;
+            font-style: impact;
+            background-image: url("/food.jpg");
+            background-clip: text; */
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            /* background: radial-gradient(circle at top, orange, rgb(241, 241, 172)); */
+            /* background: radial-gradient(closest-side at 100px 120px, orange, yellow); */
+            /* background: repeating-radial-gradient(closest-corner at 200px 120px, orange, yellow); */
+            /* background: repeating-radial-gradient(cyan 50px, pink 100px, yellow 150px);
+            background-repeat: no-repeat; */
+            /* background: conic-gradient(red 10%, orange 20%, green, blue, rgb(201, 22, 208));
+            background-repeat: no-repeat; */
+            background-image: repeating-conic-gradient(yellow 10%, red 20%);
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background-image: repeating-conic-gradient(yellow 10%, blue 20%, red 30%);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button1">
+        Click me
+    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>
