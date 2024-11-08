@@ -1,0 +1,39 @@
+@mixin border_radius($value)
+{
+    border-radius: $value;
+}
+
+@mixin border($val, $col)
+{
+    border: $val solid $col;
+}
+
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    padding: 20px;
+    margin: 10px;
+    @include border_radius(10px);
+    @include border(6px, red);
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(54, 209, 26);
+    padding: 20px;
+    margin: 10px;
+    @include border_radius(16px);
+    @include border(10px, orange);
+}
+
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(59, 182, 235);
+    padding: 20px;
+    margin: 10px;
+    @include border_radius(20px);
+    @include border(10px, rgb(218, 49, 125));
+}

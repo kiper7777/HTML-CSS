@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+}
+
+header {
+  width: 100vw;
+  height: 12vh;
+  background-color: rgb(136, 142, 136);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+section {
+  height: 70vh;
+  background-color: pink;
+}
+
+ul {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  height: 20vh;
+  background-color: rgb(105, 238, 152);
+}/*# sourceMappingURL=sass_example.css.map */

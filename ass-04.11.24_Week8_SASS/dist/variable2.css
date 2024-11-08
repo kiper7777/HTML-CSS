@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  height: 20vh;
+  width: 100vw;
+  background-color: green;
+  display: flex;
+}
+
+footer {
+  background-color: green;
+}/*# sourceMappingURL=variable2.css.map */

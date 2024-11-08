@@ -1,0 +1,34 @@
+$text_col: red;
+$back_col: rgb(136, 142, 136);
+$back_col2: pink;
+$font_size_H_F:50px;
+$f_size: 22px;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    // background-color: $back_col2;
+    }
+
+header{
+    height: 12vh;
+    width: 100vw;
+    background-color: $back_col;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    font-size: $font_size_H_F;
+}
+
+footer{
+    height: 20vh;
+    width: 100vh;
+    background-color: $back_col;
+}
