@@ -1,0 +1,25 @@
+// $i:10;
+// $j:10;
+// .content{
+//     padding: 10 == 10;
+//     padding: arial == "arial";
+//     padding: $i <= $j;
+//     padding: $i < $j;
+// }
+
+$col:green;
+$test:4;
+.content h1{
+    @if $test > 5 
+    {
+        color: $col; //false
+    }
+    @else if $test == 5  
+    {
+        color: red; //false
+    }
+    @else
+    {
+        color: purple;  //true //look in sass fail
+    }
+}

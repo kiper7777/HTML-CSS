@@ -1,0 +1,26 @@
+// Write a css code where if backtype  will dark then the background color will black and color will be white
+
+//  if backtype  will be light then the background color will gray and color will be black
+
+$backType: dark;
+
+$col1:black;
+$col2:white;
+
+.content{
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    background-color: $backType;
+    @if $backType == dark
+{
+    background-color: black;
+    color: $col2;
+}
+ @else
+{
+    background-color: gray;
+    color: $col1;
+}
+    }
+

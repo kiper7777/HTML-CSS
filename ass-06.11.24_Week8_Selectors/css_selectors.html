@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li:first-child {
+            color: red;
+        } */
+
+        /* li:last-child {
+            color: red;
+        } */
+
+        /* li:nth-child(3) {
+            color: red;
+        } */
+
+        li:nth-child(2n+1) {
+            color: red;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        p:only-child {
+            color: rgb(245, 13, 51);
+        }
+
+        ul li a:active {
+            color: purple;
+        }
+
+        p:target {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </ul>
+    </div>
+
+    <div class="list list1">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVA</li>
+            <li>Python</li>
+        </ul>
+    </div>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit?
+        </p>
+    </section>
+
+
+
+</body>
+
+</html>

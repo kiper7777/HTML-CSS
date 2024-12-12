@@ -1,0 +1,23 @@
+// $height: 100;
+// $width: 300;
+// $border-val: 2;
+// $col: yellow;
+
+@mixin box-size($height, $width, $border-val, $col) 
+{
+  height: $height + px;
+  width: $width + px;
+  border: $border-val + px solid $col;
+}
+
+@mixin box-selector($val, $backgroundCol) 
+{
+  .box#{$val}
+  {
+    @include box-size(300, 400, 4,black);
+    background-color: $backgroundCol;
+  }
+}
+
+@include box-selector(1, red);
+

@@ -1,0 +1,50 @@
+@function box-size($width: 200) {
+  @return $width/2 + vw;
+}
+
+@function btn-col($col) {
+  $co: darken($col, 20%);
+  @return $co;
+}
+
+@mixin height($value) {
+    height: $value + vh;
+  }
+  @mixin margin($value) {
+    margin: $value + px;
+  }
+
+.content {
+  //   height: 20vh;
+  @include height(20);
+  width: box-size(100);
+  @include margin(10 auto);
+  border: 2px solid black;
+  //   margin: 10px auto;
+  background-color: aquamarine;
+
+&:hover{
+    background-color: btn-col(pink);
+}
+}
+.content1 {
+  //   height: 30vh;
+  width: box-size(50);
+  border: 2px solid red;
+  //   margin: 10px auto;
+  background-color: papayawhip;
+  @include height(30);
+  @include margin(10 auto);
+}
+
+$myList:10 20 30;
+$myList1:10px 20px 30px 40px;
+$myList2:10px,20px,30px;
+$myList3:[10px,20px,30px];
+body{
+    padding: length($list: ($myList));
+    // padding:nth($myList, 2);
+    // padding: red 10%, green 20%, blue 30%;
+}
+
+

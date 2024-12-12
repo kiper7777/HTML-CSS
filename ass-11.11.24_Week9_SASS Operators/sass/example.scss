@@ -1,0 +1,9 @@
+@for $i from 1 through 4{
+    #box-#{$i}{
+        width:100px * $i;
+        height:100px * $i;
+        background-color: aqua;
+        border:2px solid black;
+        margin: 20px;
+    } }
+ 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .box1 h1 {
+            color: yellow;
+            margin: 20px 20px;
+        }
+
+        .box1 span {
+            writing-mode: vertical-lr;
+            transform: rotate(-180deg);
+            color: rgb(230, 154, 14);
+        }
+
+        .box3 {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(79, 146, 246);
+            margin-top: 20px;
+            margin: 30px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box3_inside {
+            width: 150px;
+            height: 350px;
+            background-color: white;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .let {
+            writing-mode: vertical-lr;
+            transform: rotate(-90deg);
+            color: rgb(6, 47, 67);
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <h1>DON'T <span>ROTATE</span> TEXT IN CSS INSTEAD USE THIS</h1>
+    </div>
+
+    <div class="box3">
+        <div class="box3_inside">
+            <span class="let">C</span>
+            <span class="let">S</span>
+            <span class="let">S</span>
+        </div>
+    </div>
+</body>
+
+</html>

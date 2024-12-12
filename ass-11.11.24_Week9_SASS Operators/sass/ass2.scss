@@ -1,0 +1,88 @@
+$height: 200;
+$width: 300;
+$backColor: green;
+$col: blue;
+$val: 12;
+
+@mixin set_border($val, $col) {
+  border: $val + px solid $col;
+}
+
+@mixin margin($val){
+    margin-top: $val;
+}
+// @mixin backCol($col) {
+//   background-color: $backColor;
+// }
+
+@mixin  box-selector($val, $backColor)
+{
+       
+    .box#{$val} {
+        height: 200 + px;
+        width: $width + px;
+        background-color: $backColor;
+        @if $val == 1
+        {
+            @include set_border(2, red);  
+            @include margin(10);
+        }
+        @else if $val == 2
+        {
+            @include set_border(2, red);  
+            @include margin(10);
+        }
+        @else if $val == 3 {
+            @include set_border(2, red);  
+            @include margin(10);
+        }
+        @else {
+            @include set_border(2, red);  
+            @include margin(10);
+        }
+    }
+}
+// @include backCol(red);
+// @include set_border(2, red, $val) {
+//   .box#{$val} {
+//     height: 200 + px;
+//     width: $width + px;
+//     @include margin(top, 10);
+//   }
+// }
+
+@include box-selector(1,red);
+@include box-selector(2,green);
+@include box-selector(3,pink);
+@include box-selector(4,grey);
+
+// .box1 {
+//   height: 200 + px;
+//   width: $width + px;
+//   background-color: greenyellow;
+//   @include backCol(red);
+//   @include set_border(2, red);
+//   @include margin(top, 10);
+// }
+// .box2 {
+//   height: 200 + px;
+//   width: $width * 2 + px;
+//   background-color: pink;
+//   @include backCol(pink); 
+//   @include set_border(4, blue);
+//   @include margin(left, 10);
+// }
+// .box3 {
+//   height: 200 + px;
+//   width: $width * 3 + px;
+//   background-color: orange;
+//   @include set_border(4, rgb(175, 214, 33));
+//   @include margin(right, 10);
+// }
+// .box4 {
+//   height: 200 + px;
+//   width: $width * 4 + px;
+//   background-color: rgb(147, 56, 56);
+//   @include set_border(4, blue);
+//   @include margin(bottom, 10);
+// }
