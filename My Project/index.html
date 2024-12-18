@@ -625,12 +625,14 @@
             .container {
                 margin: 0;
                 padding: 0.4rem 0.8rem;
+                justify-content: space-around;
             }
 
             .logo img {
                 width: 60px;
                 height: auto;
                 display: flex;
+                justify-items: start;
             }
 
             nav ul {
@@ -638,13 +640,15 @@
             }
 
             .auth-buttons button {
-                padding: 0.3rem 0.6rem;
-                font-size: 14px;
+                padding: 0.2rem 0.4rem;
+                font-size: 12px;
                 font-weight: 600;
             }
 
             .hero {
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 height: 40vh;
             }
 
@@ -659,11 +663,24 @@
                 font-size: 12px;
             }
 
-            /* .form input {
+            .form input {
                 width: 250px;
                 height: 32px;
                 padding: 10px;
-            } */
+
+                /* border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                font-weight: bold; */
+            }
+
+            .form button {
+
+                /* border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                width: 100%;
+                display: block;
+                text-align: center; */
+            }
 
             .reviews {
                 gap: 6px;
@@ -1289,6 +1306,9 @@
             <form class="form">
                 <input type="email" placeholder="yourmail@gmail.com" required>
                 <button type="submit">Start a career</button>
+
+                <!-- <input type="email" class="email" placeholder="yourmail@gmail.com" required>
+                <input type="submit" class="button" value="Start a career"> -->
             </form>
 
             <div class="reviews">
@@ -1303,8 +1323,8 @@
         </section>
 
         <section class="video-container">
-            <video controls>
-                <source src="" type="video/mp4">
+            <video controls autoplay muted loop>
+                <source src="/video/chart.mp4" type="video/mp4">
             </video>
             <img src="/image/logo1.png" alt="Logo" class="video-logo">
         </section>
