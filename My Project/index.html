@@ -46,13 +46,35 @@
             border-radius: 10px;
         }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
+        .burger {
+            display: none;
+            /* По умолчанию скрыта на больших экранах */
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
         }
 
-        nav ul li a {
+        .burger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #3A2A06;
+            transition: all 0.3s ease;
+        }
+
+        /* Навигационное меню */
+        .menu {
+            display: flex;
+            /* По умолчанию видно на десктопах */
+        }
+
+        .menu ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .menu a {
             text-decoration: none;
             color: #333;
             font-weight: 600;
@@ -569,18 +591,12 @@
                 color: rgb(48, 113, 18);
             }
 
+            /* Показываем бургер-иконку */
             .burger {
                 display: flex
             }
 
-            /* .burger span {
-                display: block;
-                width: 25px;
-                height: 3px;
-                background-color: #fff;
-                transition: all 0.3s ease;
-            } */
-
+            /* Скрываем меню */
             .menu {
                 display: none;
                 flex-direction: column;
@@ -595,6 +611,7 @@
 
             .menu .active {
                 display: flex;
+                /* Показываем при активации */
             }
 
             .menu ul {
@@ -606,12 +623,13 @@
                 font-size: 18px;
             }
 
+            /* Анимация для бургер-иконки */
             .burger.active span:nth-child(1) {
                 transform: translateY(8px) rotate(45deg);
             }
 
             .burger.active span:nth-child(2) {
-                opacity: 0;
+                opacity: 10;
             }
 
             .burger.active span:nth-child(3) {
