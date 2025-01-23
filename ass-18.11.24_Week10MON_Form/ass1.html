@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <style>
+        div {
+            margin-bottom: 12px;
+        }
+
+        .header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .header {
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .header h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 100;
+            margin: 50px;
+        }
+
+        .form {
+            display: grid;
+            font-size: 16px;
+            color: rgb(65, 65, 65);
+            width: 600px;
+        }
+
+        .form input {
+            height: 22px;
+            border: 1px solid rgb(214, 214, 16);
+            border-radius: 6px;
+            font-size: 10px;
+            color: rgb(175, 175, 175);
+        }
+
+        .text {
+            font-size: 14px;
+            color: rgb(61, 60, 60);
+        }
+
+        .text_green {
+            color: rgb(58, 171, 20);
+        }
+
+        .button input {
+            width: 600px;
+            height: 22px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(58, 171, 20);
+            color: white;
+            font-size: 12px;
+        }
+
+        .capcha {
+            border: 1px solid gray;
+            border-radius: 4px;
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="index.php" method="post">
+        <div class="header">
+            <img src="logo3.jpg" alt="logo">
+            <h1>Wellness Center Membership Registration Form</h1>
+        </div>
+
+        <div>
+            <label for="firstName">Full Name</label>
+            <div>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            </div>
+        </div>
+
+        <div class="form">
+            <label for="birthDate">Birth Date</label>
+            <input type="date" name="birthDate" id="birthDate">
+        </div>
+
+        <div class="form">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form">
+            <label for="insurance">Insurance</label>
+            <input type="text" name="insurance" id="insurance">
+        </div>
+
+        <span class="text">Terms of Service*</span>
+
+        <div>
+
+
+            <label for="terms"></label>
+            <input type="radio" name="terms" id="terms">
+            <span class="text">I agree to the <em class="text_green">terms of service.</em></span>
+        </div>
+
+        <span>Verification*</span>
+        <div class="capcha text">
+            <input type="checkbox" name="verification" id="verification">
+            <span>I'm not a robot</span>
+        </div>
+
+        <div class="button">
+            <input type="submit" value="SUBMIT FORM">
+        </div>
+    </form>
+
+</body>
+
+</html>

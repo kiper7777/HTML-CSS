@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="index.php" method="post">
+        <div>
+            <label for="username">UserName</label>
+            <input type="text" name="username" id="username" required minlength="5" maxlength="10" placeholder="John">
+        </div>
+
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required minlength="8" maxlength="12"
+                pattern="[A-z]{1}[A-za-z]{3}[0-9]{4}">
+        </div>
+
+        <div>
+            <label for="">Phone Number</label>
+            <input type="tel" name="phone" id="phone" pattern="44-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+
+        <label for="">Title:</label>
+
+        <label for="mr">Mr.</label>
+        <input type="radio" name="title" id="mr">
+
+        <label for="mrs">Mrs.</label>
+        <input type="radio" name="title" id="mrs">
+
+        <label for="dr">Dr.</label>
+        <input type="radio" name="title" id="dr">
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+        </div>
+
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <div>
+            <label for="experience">Years of experience</label>
+            <input type="number" name="experience" id="experience" min="1" max="10">
+        </div>
+
+        <div>
+            <label for="">Are you Web student?</label>
+            <input type="checkbox" name="web" id="web">
+        </div>
+
+        <div>
+            <label for="">Please share your experience</label>
+            <textarea name="exp" id="exp" cols="20" rows="20"></textarea>
+        </div>
+
+        <div>
+            <label for="lang">Languages</label>
+            <select name="lang" id="lang">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Java">Java</option>
+                <option value="PHP" selected>PHP</option>
+            </select>
+        </div>
+
+        <label for="degree">What degree you have</label>
+        <input list="passDegree" type="text" name="degree" id="degree">
+        <datalist id="passDegree">
+
+            <option value="Bsc"></option>
+            <option value="Msc"></option>
+            <option value="Graduate"></option>
+            <option value="Phd"></option>
+            <option value="Master Degree"></option>
+
+        </datalist>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+        <div>
+            <label for="">Pick any color you want</label>
+            <input type="color" name="col" id="col" value="red">
+        </div>
+
+        <div>
+            <label for="file">Please attach your resume</label>
+            <input type="file" name="file" id="file" accept="image/png image/jpeg">
+        </div>
+
+        <div>
+            <input type="search" name="search" id="search">
+            <input type="submit" value="Search">
+        </div>
+
+        <div>
+            <label for="week">Week</label>
+            <input type="week" name="week" id="week" min="2022-W01" max="2024-W02">
+        </div>
+
+        <div>
+            <label for="url">Please share your Github URL</label>
+            <input type="url" name="url" id="url" placeholder="example.com">
+        </div>
+
+    </form>
+</body>
+
+</html>
