@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .box {
+            height: 70vh;
+            /* width: 100vw; */
+            text-align: center;
+            scroll-snap-align: y mandatory;
+        }
+
+        #box1 {
+            background-color: rgb(197, 239, 112);
+        }
+
+        #box2 {
+            background-color: rgb(122, 122, 238);
+        }
+
+        #box3 {
+            background-color: rgb(241, 138, 138);
+        }
+
+        #box4 {
+            background-color: pink;
+        }
+
+        header {
+            height: 10vh;
+            background-color: antiquewhite;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#box1">Home</a></li>
+            <li><a href="#box2">Contact us</a></li>
+            <li><a href="#box3">Gallery</a></li>
+            <li><a href="#box4">About us</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="box" id="box1">Home</div>
+        <div class="box" id="box2">Contact us</div>
+        <div class="box" id="box3">Gallery
+            <video height="200px" width="400px" controls>
+                <source src="./image/stock.webm">
+            </video>
+        </div>
+        <div class="box" id="box4">About us
+            <button class="btn"><a href="#box1">Back</a></button>
+
+        </div>
+    </div>
+</body>
+
+</html>
