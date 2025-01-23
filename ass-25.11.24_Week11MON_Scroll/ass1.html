@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: x proximity;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        ul {
+            display: flex;
+            width: 50vw;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        img {
+            width: 60px;
+        }
+
+        .section1 {
+            height: 50vh;
+            text-align: center;
+            background-image: url("mountain1.jpg");
+            background-size: cover;
+        }
+
+        .section2 {
+            height: 50vh;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 10px;
+        }
+
+        .section2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content_section2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: orange;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .content_section2 button {
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="icon.jpeg" alt="Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </header>
+    <section class="section1">
+    </section>
+
+    <section class="section2">
+        <img src="/nature.jpg" alt="">
+        <div class="content_section2">
+            <h1>Content with contains </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nihil amet porro temporibus, accusamus
+                magnam
+                officia pariatur atque reprehenderit aliquid nemo beatae error aperiam odio quibusdam nisi adipisci
+                corrupti
+                nobis.</p>
+            <button>Submit</button>
+        </div>
+    </section>
+</body>
+
+</html>

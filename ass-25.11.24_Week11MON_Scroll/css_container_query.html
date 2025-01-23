@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .post {
+            max-height: 300px;
+            max-width: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            padding: 10px;
+            background-color: aqua;
+            container-type: inline-size;
+            font-size: 22px;
+        }
+
+        .post h1 {
+            color: blue;
+        }
+
+        /* @media screen and(min-width: 800px) {
+            .post h1 {
+                font-size: 28px;
+                color: red;
+            }
+        } */
+
+        @container (min-width: 500px) {
+            .post h1 {
+                font-size: 28px;
+                color: rgb(225, 40, 179);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="post">
+        <div class="card">
+            <h1>SAE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aut harum nostrum, necessitatibus
+                assumenda porro quidem dicta.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
